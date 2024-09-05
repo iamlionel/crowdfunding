@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { logo, menu, search, thirdweb } from '../assets';
 import { Link, useNavigate } from 'react-router-dom';
-import CustomButton from './CustomButton';
 import { navlinks } from '../constants';
+import { CustomButton } from './index';
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [isActive, setIsActive] = useState('dashboard');
   const [isToggleDrawer, setToggleDrawer] = useState(false);
-  const address = false;
+  const address = true;
   return (
     <div className="flex md:flex-row flex-col-reverse justify-between mb-[35px] gap-6">
       <div className="lg:flex-1 flex flex-row max-w-[458px] h-[52px] py-2 pl-4 pr-2 bg-[#1c1c24] rounded-[100px]">
